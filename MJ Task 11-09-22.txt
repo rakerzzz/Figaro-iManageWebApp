@@ -1,0 +1,17 @@
+Vscode Extension:
+Live Server
+Prettier
+
+Admin Chat Task:
+-Create adminChat Folder
+-Duplicate Dashboard rename adminChat.html
+-Change Webpage Title
+-Change offcanvas picture
+-Change offcanvas nav items
+-Change Main Content according to figma
+
+
+Admin Support Task:
+-Create adminSupport Folder
+-Duplicate Dashboard rename adminSupport.html
+-Change Main Content according to figma
