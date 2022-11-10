@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>FIGARO</title>
+    <link rel="stylesheet" href="../../../../scss/custom.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div
+        class="offcanvas offcanvas-start sidebar-nav bg-dark visible"
+        data-bs-backdrop="true"
+        data-bs-scroll="false"
+        id="offcanvas"
+      >
+        <div class="offcanvas-body px-0">
+          <nav class="navbar-dark">
+            <div class="text-center px-3">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid p-0 m-2 ms-5"
+                  src="../../../../assets/images/logo.png"
+                  width="120"
+                  height="80"
+                  alt="profile"
+                />
+              </div>
+            </div>
+            <hr class="dropdown-divider bg-light mx-3" />
+            <ul class="navbar-nav">
+            
+              <li class="nav-item container-fluid">
+                <a class="nav-link" href="../sushiresto/sushiRestaurant.html"
+                  ><i class="bi bi-bar-chart"></i><span class="ms-2">Dashboard</span></a
+                >
+              </li>
+
+              <li class="nav-item container-fluid">
+                <a class="nav-link" href="../sushiresto/sushiRestaurant.html"
+                  ><i class="bi bi-person"></i><span class="ms-2">Roles</span></a
+                >
+              </li>
+              <li class="nav-item container-fluid">
+                <a
+                  class="nav-link"
+                  href="../lessonxcourse/adminCreationofLesson.html"
+                  ><i class="bi bi-people"></i><span class="ms-2">Department</span></a
+                >
+              </li>
+              <li class="nav-item container-fluid">
+                <a class="nav-link" href="/class/verifications"
+                  ><i class="bi bi-headset"></i><span class="ms-2">Support</span></a
+                >
+              </li>
+              <li class="nav-item container-fluid">
+                <a class="nav-link" href="../participant/adminParticipant.html"
+                  ><i class="bi bi-chat"></i>
+                  <span class="ms-2">Chat</span></a
+                >
+              </li>
+              <li class="nav-item container-fluid">
+                <a class="nav-link" href="/class/verifications"
+                  ><i class="bi bi-megaphone"></i>
+                  <span class="ms-2">Announcement</span></a
+                >
+              </li>
+              <li class="nav-item container-fluid">
+                <a class="nav-link" href="../participant/adminParticipant.html"
+                  ><i class="bi bi-book"></i>
+                  <span class="ms-2">Learn</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="my-2">
+          <button class="nav-link text-muted btn btn-link">
+            <i class="bi bi-power"></i
+            ><span class="ms-2 fw-bold small">Log out</span>
+          </button>
+        </div>
+      </div>
+      <main class="vh-100 d-flex flex-column">
+        <nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <button
+              type="button"
+              class="btn btn-sm btn-link fs-4 ps-0 text-dark"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <!-- for brand besides navbar -->
+            <a href="# " class="navbar-brand me-auto fw-bold"></a>
+            <!-- for brand besides navbar -->
+          </div>
+        </nav>
+        <div class="ms-3" style="width:37%">
+          <form class="d-flex justify-content-between mt-3">
+          <h2 class="">User Chat List</h2> 
+          </form>
+          <hr>
+          <div>
+            <div class="container px-lg-1 py-lg-1  input-group ">
+              <select class="form-select shadow-none fs-xs">
+              
+                <option value="id">id</option>
+                <option value="createdAt">department</option>
+                <option value="username">name</option>
+                <option value="email">email</option>
+              
+                <option value="department"></option></select
+              ><input
+                type="text"
+                class="form-control form-control-sm shadow-none"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <div class="table-responsive shadow-sm mt-2">
+              <table class="table mb-0 w-100 table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th class="align-middle">
+                      <div class="custom-control custom-checkbox">
+                      <label
+                          class="custom-control-label"
+                          for="check_74U4L282AT"
+                        ></label>
+                      </div>
+                    </th>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                     ID
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                     DEPARTMENT
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      NAME
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                     EMAIL
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                  </tr>
+                </thead>
+                <tbody class="bg-white">
+                  <tr>
+                    <th class="align-middle">
+                      <div class="custom-control custom-checkbox">
+                      <label
+                          class="custom-control-label"
+                          for="check_74U4L282AT"
+                        ></label>
+                      </div>
+                    </th>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      74U4L282AT
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      ACCOUNTING
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      john simple
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      johnsimple22@gmail.com
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <th class="align-middle">
+                      <div class="custom-control custom-checkbox">
+                      <label
+                          class="custom-control-label"
+                          for="check_74U4L282AT"
+                        ></label>
+                      </div>
+                    </th>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      22242352552
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      IT
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      jessi joe
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      jessijoe@gmail.com
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <th class="align-middle">
+                      <div class="custom-control custom-checkbox">
+                      <label
+                          class="custom-control-label"
+                          for="check_74U4L282AT"
+                        ></label>
+                      </div>
+                    </th>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      76575686582
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      IT
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      jaycee lou
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                    jayceelou@gmail.com
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <tr>
+                      <th class="align-middle">
+                        <div class="custom-control custom-checkbox">
+                        <label
+                            class="custom-control-label"
+                            for="check_74U4L282AT"
+                          ></label>
+                        </div>
+                      </th>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                       36785866661
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        ACCOUNTING
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        khaycie lou
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                      khaycielou@gmail.com
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                    </tr>
+                    <th class="align-middle">
+                      <div class="custom-control custom-checkbox">
+                      <label
+                          class="custom-control-label"
+                          for="check_74U4L282AT"
+                        ></label>
+                      </div>
+                    </th>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      50395397576
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      ACCOUNTING
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      travis jr
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                    travisjr@gmail.com
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <th class="align-middle">
+                      <div class="custom-control custom-checkbox">
+                      <label
+                          class="custom-control-label"
+                          for="check_3OJY1LV5TD"
+                        ></label>
+                      </div>
+                    </th>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                     83728578230
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                     ENGINEERING
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                      franak
+                    </td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    >
+                    franak@gmail.com
+                    </td>
+                   
+                       </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                    </tr>
+                    <tr>
+                      <th class="align-middle">
+                        <div class="custom-control custom-checkbox">
+                        <label
+                            class="custom-control-label"
+                            for="check_74U4L282AT"
+                          ></label>
+                        </div>
+                      </th>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        8R28397829
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        ACCOUNTING
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        coney ray
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                      coneyray@gmail.com
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                    </tr>
+                    <tr>
+                      <th class="align-middle">
+                        <div class="custom-control custom-checkbox">
+                        <label
+                            class="custom-control-label"
+                            for="check_74U4L282AT"
+                          ></label>
+                        </div>
+                      </th>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                       938693633124
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        STORE
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        ejay young
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        ejayyoung@gmail.com
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <tr>
+                        <th class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                          <label
+                              class="custom-control-label"
+                              for="check_74U4L282AT"
+                            ></label>
+                          </div>
+                        </th>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          3367874845
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          ENGINEERING
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          patrick gary
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                        patrickgary@gmail.com
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                      </tr>
+                      <th class="align-middle">
+                        <div class="custom-control custom-checkbox">
+                        <label
+                            class="custom-control-label"
+                            for="check_74U4L282AT"
+                          ></label>
+                        </div>
+                      </th>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                       26746726732
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        HUMAN RESORCES
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        jerry lay
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                      jerrylay@gmail.com
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                    </tr>
+                    <tr>
+                      <th class="align-middle">
+                        <div class="custom-control custom-checkbox">
+                        <label
+                            class="custom-control-label"
+                            for="check_3OJY1LV5TD"
+                          ></label>
+                        </div>
+                      </th>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        35767536753
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                       IT
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                        carlo aquino
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      >
+                      carloaquino@gmail.com
+                      </td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                      <td
+                        class="fs-sm text-truncate"
+                        style="cursor: pointer; max-width: 15em"
+                      ></td>
+                    </tr>
+                    <tr>
+                      <tr>
+                        <th class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                          <label
+                              class="custom-control-label"
+                              for="check_74U4L282AT"
+                            ></label>
+                          </div>
+                        </th>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          35675676667
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          STORE
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          troy moreno
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          troymoreno@gmail.com
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                      </tr>
+                      <tr>
+                        <th class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                          <label
+                              class="custom-control-label"
+                              for="check_74U4L282AT"
+                            ></label>
+                          </div>
+                        </th>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          33545768712
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          HUMAN RESORCES
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          kat lindsay
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          katlindsay@gmail.com
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                      </tr>
+                      <tr>
+                        <th class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                          <label
+                              class="custom-control-label"
+                              for="check_74U4L282AT"
+                            ></label>
+                          </div>
+                        </th>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          35367687666
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          ACCOUNTING
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          merly kath
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                        merlykath2@gmail.com
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <tr>
+                          <th class="align-middle">
+                            <div class="custom-control custom-checkbox">
+                            <label
+                                class="custom-control-label"
+                                for="check_74U4L282AT"
+                              ></label>
+                            </div>
+                          </th>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          ></td>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          >
+                            23452452457
+                          </td>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          >
+                            ENGINEERING
+                          </td>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          >
+                            ejhay korr
+                          </td>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          >
+                          ejhaykorr@gmail.com
+                          </td>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          ></td>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          ></td>
+                          <td
+                            class="fs-sm text-truncate"
+                            style="cursor: pointer; max-width: 15em"
+                          ></td>
+                        </tr>
+                        <th class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                          <label
+                              class="custom-control-label"
+                              for="check_74U4L282AT"
+                            ></label>
+                          </div>
+                        </th>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                         25253463567
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          IT
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          shamsey anne
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                        shamseyanne@gmail.com
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                      </tr>
+                      <tr>
+                        <th class="align-middle">
+                          <div class="custom-control custom-checkbox">
+                          <label
+                              class="custom-control-label"
+                              for="check_3OJY1LV5TD"
+                            ></label>
+                          </div>
+                        </th>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15 em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                         35354657679
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                         IT
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                          rosie chiie
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        >
+                        rosiechiie@gmail.com
+                        </td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                        <td
+                          class="fs-sm text-truncate"
+                          style="cursor: pointer; max-width: 15em"
+                        ></td>
+                      </tr>
+                      <tr>
+                         
+
+
+
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                    <td
+                      class="fs-sm text-truncate"
+                      style="cursor: pointer; max-width: 15em"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
