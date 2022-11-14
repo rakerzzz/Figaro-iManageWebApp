@@ -2,16 +2,22 @@ Vscode Extension:
 Live Server
 Prettier
 
+
 Admin Chat Task:
--Create adminChat Folder
--Duplicate Dashboard rename adminChat.html
--Change Webpage Title
--Change offcanvas picture
--Change offcanvas nav items
--Change Main Content according to figma
+-Create adminChat Folder - done
+-Duplicate Dashboard rename adminChat.html - done
+-Change Webpage Title - done
+-Change offcanvas picture - done
+-Change offcanvas nav items - done
+-Change Main Content according to figma - done
 
 
-Admin Support Task:
--Create adminSupport Folder
--Duplicate Dashboard rename adminSupport.html
--Change Main Content according to figma
+Task 11-14-2022
+-fix navbar sa taas yung may 3 lines dapat hindi kasama sa scrolling (check support folder para sa reference)
+-fix Jessi Islander IT Department dapat hindi din sya scrollable
+-yung mga list of user scollable din dapat. pero nakafix yung search bar.
+-iwork out yung user icon dapat Letter na naka Encircle based sa figma
+
+
+NOTE: "Nag update ako ng folder sa adminSide nilagay ko na sa adminChat fodler yung gawa mo."
+
