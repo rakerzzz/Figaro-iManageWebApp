@@ -1,0 +1,5 @@
+TASK ni MJ Ganda :3 11-17-22:
+
+Client Side (Magbase sa figma)
+-Create New Ticket
+-Ticket Issue List (dapat magkaroon ng textbox kuha ka reference sa ginawa kong adminSupport)
